@@ -1,0 +1,20 @@
+{
+    "name": "EasyTermo",
+    "version": "1.0.0",
+    "description": "EasyTermo",
+    "manifest_version": 3,
+    "author": "Nycolazs",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "EasyTermo"
+    },
+    "permissions": ["storage","tabs"],
+    "content_scripts":[{
+        "matches": [
+            "https://mywordle.strivemath.com/*"
+        ],
+        "js": [
+            "index.js"
+        ]
+    }]
+}
